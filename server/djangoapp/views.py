@@ -51,7 +51,7 @@ def logout_request(request):
 # def registration(request):
 @csrf_exempt
 def registration(request):
-    context = {}
+    # context = {}
 
     # Load JSON data from the request body
     data = json.loads(request.body)

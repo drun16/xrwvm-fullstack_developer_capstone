@@ -15,6 +15,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class CarMake(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
     # Other fields as needed
 
     def __str__(self):
